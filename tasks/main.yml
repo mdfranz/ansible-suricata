@@ -1,0 +1,6 @@
+---
+- name: Add OISF Suricata repo
+  apt_repository:
+  repo: "{{ suricata_repo_name }}"
+  state: present
+  update_cache: yes
